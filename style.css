@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #42032C;
+    color: white;
+}
+/* header */
+header{
+    text-align: center;
+}
+header h1{
+    display: inline-block;
+}
+
+/* search section */
+
+form{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+input{
+    height: 40px;
+    width: 70%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    
+}
+.search-box input{
+    border-radius: 0;
+   
+}
+.search-box i{
+    padding: 3px;
+    font-size: 1.8rem;
+    height: 40px;
+    width: 50px;
+    border: 2px solid white;
+    
+}
+
+/* filter section */
+.filter .filter-heading{
+    text-align: center;
+    font-size: 2rem;
+    margin: 5px;
+
+    
+}
+.filter-types{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.filter-types p{
+    border: 2px solid black;
+    padding: 10px;
+    transition: 1s;
+    background-color: brown;
+}
+.filter-types p:hover{
+    cursor: pointer;
+    background-color: crimson;
+}
+.filter-category p{
+    border: 1px solid black;
+    padding: 20px;
+
+}
+
+
+/* filter-ingredients */
+.filter-ingredients,
+.filter-category,
+.filter-country{
+    position: relative;
+    margin: 0 auto;     
+}
+
+/* food title */
+.food-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.food-name{
+    text-align: center;
+}
+
+
+
+/*main  */
+.main{
+    padding: 20px;
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+@media all and (min-width:900px){
+    .main{
+        padding: 20px;
+        display: grid;
+        grid-gap:20px;
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+.main div{
+    cursor: pointer;
+    
+}
+.main div img{
+    width: 100%;
+    opacity: 0.6;
+    transition: 1s;
+}
+.main div img:hover{
+    opacity: 1;
+}
+
+
+
+/* hide */
+.hide{
+    display: none;
+}
+
